@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+
+</head>
+<body>
+	
+<div id="demo">
+	<h1>旮旯给么.697ver</h1>
+<label>你是谁？</label><br>
+           <select id="cN">
+            <option value="sq">37</option>
+            <option value="sh">霜和</option>
+            <option value="ht">鹄桃</option>
+			</select><br>
+<button type="button" onclick="myFunction()">点击这里</button>
+	</div>
+	<script>
+function myFunction(){
+	    let name = document.getElementById("cN");
+	    let cN = name.value;
+		let x="";
+	if (cN==="sq"){
+	 	x="飞天大入";
+			document.getElementById("demo").innerHTML=x;
+	document.getElementById("demo").style.color = "red";
+		document.getElementById("demo").style.fontSize="300%";
+		document.getElementById("demo").style.textAlign="center";
+		document.getElementById("demo").style.top="0";
+		document.getElementById("demo").style.bottom="0";
+     }
+	else{
+ 		x="飞天小入";
+			document.getElementById("demo").innerHTML=x;
+	document.getElementById("demo").style.color = "grey";
+		document.getElementById("demo").style.textAlign="center";
+ 	}
+
+}
+</script>
+</body>
+</html>
