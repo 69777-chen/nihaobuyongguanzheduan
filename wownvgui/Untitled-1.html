@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cn-Zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import "style.css";
+    </style>
+    <title>critic</title>
+
+</head>
+<body class="container">
+    <div id="bigDiv">
+        <div id="bigPic">点击下方头像查看详情</div>
+    </div>
+    <div class="avalist">
+        <div><img src="1.jpg" class="ava"></div>
+        <div><img src="2.jpg" class="ava"></div>
+        <div><img src="3.jpg" class="ava"></div>
+        <div><img src="4.jpg" class="ava"></div>
+    </div>
+    <script>
+        let sample = document.getElementsByClassName('ava');
+        let bigPic = document.getElementById('bigPic');
+        let bigDiv = document.getElementById('bigDiv');
+        console.log(sample)
+
+        for(let i=0;i<sample.length;i++){
+            sample[i].onmouseover=function(){
+                 for(let j=0;j<sample.length;j++){
+                    sample[j].setAttribute('id','');
+                 }
+                this.setAttribute('id','active');
+                currentIndex = i+1;
+                console.log(currentIndex);
+
+                bigPic.remove(); 
+                let newImg = document.createElement('img');
+                newImg.id='bigPic';
+                newImg.src='cri'+currentIndex+'.png';
+                bigDiv.appendChild(newImg);
+                bigPic = newImg;
+
+            }
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.avalist{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.ava{
+    top: auto;
+    left: auto;
+    flex-shrink: 0;
+    height:100px;   
+    width:100px;
+    border-radius: 100%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#active{
+    flex-shrink: 0;
+    height:120px;   
+    width:120px;
+    border-radius: 100%;
+    border: 5px solid red;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+#bigDiv {
+    width: 400px; /* 给大图容器设置宽度 */
+    height: 300px; /* 给大图容器设置高度 */
+    margin: 20px auto; /* 居中+间距 */
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#bigPic {
+    width: 300px; /* 给大图容器设置宽度 */
+    height: 300px; /* 给大图容器设置高度 */
+    margin: 20px auto; /* 居中+间距 */
+}
